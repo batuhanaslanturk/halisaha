@@ -35,7 +35,7 @@
                     <div class="barkutucuk">
                     	<div class="barimage">
                     	<img src="../image/shelter.png"></div>
-                        <div class="baryazı">AnaSayfa</div>
+                        <div class="baryazı">babasayfa</div>
                     </div>
                     </a>
 					<a href="iletisim.html" style="text-decoration:none;"> 
