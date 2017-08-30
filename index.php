@@ -3,15 +3,42 @@
 <head>
 
 <meta charset="utf-8">
+<title>Başlıksız Belge</title>
 <link rel="stylesheet" href="anansayfadesign.css"/>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<title>MACİMİZVARRRRRR</title>
+<script src="jquery-1.10.2.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $(".call_modal").click(function(){
+	$(".modal").fadeIn();
+	$(".modal_main").show();
+	  });
+});
+$(document).ready(function(){
+  $(".close").click(function(){
+	$(".modal").fadeOut();
+	$(".modal_main").fadeOut();
+	  });
+});
+</script>
+
 </head>
 
+<div class="modal">
+<div class="modal_close close"></div>
+<div class="modal_main">
+Kullanıcı Adı
+<input type="text" name="kadi">
+Şifre
+<input type="text" name="sifre">
+<input type="submit" value="Giriş Yap">
+<img src="i783wQYjrKQ.png" class="close" style="margin-top:13px;left:96%;position:fixed;">
+</div>
+</div>
 <body>
-
 <div class="sablon">
 	<div class="logo"><img src="../image/logo.jpg" 
     style="-webkit-border-radius: 20px 20px 20px 20px;
@@ -25,10 +52,9 @@
         <font style="float:left; font-size:20px; font-family:XBAND Rough;margin-left:220px;color:#FFF;">"Rakibin Burada Seni Bekliyor"</font>
     </div>
     <div class="kullanıcı">
-    	 	
-<div class="col-md-3 col-sm-3 col-xs-6" style="float:left; margin-top:8px;"> <a href="index2.php" class="btn btn-sm animated-button victoria-three">Giriş Yap</a> </div>
-            <div class="col-md-3 col-sm-3 col-xs-6" style="float:right; margin-top:70px; margin-right:135px;"> <a href="kayitol.html" class="btn btn-sm animated-button victoria-four">Kayıt Ol</a> </div>
-            
+    	 	<button class="call_modal">Giriş Yap</button>
+            <button class="call_modal">Kayıt Bul</button>
+            <div class="col-md-3 col-sm-3 col-xs-6" style="float:right; margin-top:70px; margin-right:135px;"> <a href="kayitol.html" class="btn btn-sm animated-button victoria-four">Kayıt Ol</a></div>
     </div>
     <div class="bar">
         			<a href="anasaya.html" style="text-decoration:none;" >
@@ -79,7 +105,6 @@
 		   
     </div>
    	<div class="filtreleme"><font style="float:left; font-size:40px; margin-top:22px; margin-left:25px; color:#FFF;">Saha Ara</font>
-    
     <font style="float:left; margin-top:25px; margin-left:15px; font-size:30px; color:#FFF";>İl Seçiniz</font>
     <select name="iller" style="margin-top:5px; margin-left:15px; width:170px; height:35px; font-size:20px;">
 		<option value="Beyaz">Bursa</option>
@@ -88,14 +113,15 @@
 	</select>
     
     </div>
-   
+    <input type="button" class="call_modal" value="gönder">
+   	
     	
     </div>
-    
+
+		
 
 
 
 </div>
-
 </body>
 </html>
