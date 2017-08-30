@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<title>Başlıksız Belge</title>
+<title>MACİMİZVARRRRRR</title>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
                     <div class="barkutucuk">
                     	<div class="barimage">
                     	<img src="../image/shelter.png"></div>
-                        <div class="baryazı">babasayfa</div>
+                        <div class="baryazı">AnaSayfa</div>
                     </div>
                     </a>
 					<a href="iletisim.html" style="text-decoration:none;"> 
