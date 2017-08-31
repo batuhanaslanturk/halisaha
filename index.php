@@ -30,11 +30,14 @@ $(document).ready(function(){
 <div class="modal">
 <div class="modal_close close"></div>
 <div class="modal_main">
-Kullanıcı Adı
-<input type="text" name="kadi">
-Şifre
-<input type="text" name="sifre">
-<input type="submit" value="Giriş Yap">
+<font style="font-size:50px; margin-left:110px; margin-top:10px; float:left; color:#FFF">Giriş Yap</font>
+
+<font style="font-size:25px; margin-top:10px; margin-left:20px; float:left; color:#FFF;">Kullanıcı Adı</font>
+<input type="text" name="kadi" style="width:250px; height:35px; margin-right:135px;  float:right; background-color:#FFF; color:#000; ">
+<font style="font-size:25px; margin-top:10px; margin-left:20px; float:left; color:#FFF;">Şifre</font>
+<input type="password" name="sifre" style="width:250px; height:35px; margin-right:135px;  float:right; background-color:#FFF; color:#000;">
+
+<input type="button" name="girisyap" value="Giriş" style="margin-top:10px; font-size:25px; float:left; margin-left:20px; width:75px; height:50px; background-color:#3C0;">
 <img src="i783wQYjrKQ.png" class="close" style="margin-top:13px;left:96%;position:fixed;">
 </div>
 </div>
@@ -54,8 +57,8 @@ Kullanıcı Adı
     <div class="kullanıcı">
     	 	<button class="call_modal">Giriş Yap</button>
             <button class="call_modal">Kayıt Bul</button>
-            <div class="col-md-3 col-sm-3 col-xs-6" style="float:right; margin-top:70px; margin-right:135px;"> <a href="kayitol.html" class="btn btn-sm animated-button victoria-four">Kayıt Ol</a></div>
     </div>
+    
     <div class="bar">
         			<a href="anasaya.html" style="text-decoration:none;" >
                     <div class="barkutucuk">
@@ -105,6 +108,7 @@ Kullanıcı Adı
 		   
     </div>
    	<div class="filtreleme"><font style="float:left; font-size:40px; margin-top:22px; margin-left:25px; color:#FFF;">Saha Ara</font>
+    
     <font style="float:left; margin-top:25px; margin-left:15px; font-size:30px; color:#FFF";>İl Seçiniz</font>
     <select name="iller" style="margin-top:5px; margin-left:15px; width:170px; height:35px; font-size:20px;">
 		<option value="Beyaz">Bursa</option>
@@ -113,7 +117,7 @@ Kullanıcı Adı
 	</select>
     
     </div>
-    <input type="button" class="call_modal" value="gönder">
+ 
    	
     	
     </div>
