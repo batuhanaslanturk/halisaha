@@ -9,6 +9,7 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script src="jquery-1.10.2.min.js"></script>
+<link rel="stylesheet" href="modal.css">
 
 <script>
 $(document).ready(function(){
@@ -27,20 +28,6 @@ $(document).ready(function(){
 
 </head>
 
-<div class="modal">
-<div class="modal_close close"></div>
-<div class="modal_main">
-<font style="font-size:50px; margin-left:110px; margin-top:10px; float:left; color:#FFF">Giriş Yap</font>
-
-<font style="font-size:25px; margin-top:10px; margin-left:20px; float:left; color:#FFF;">Kullanıcı Adı</font>
-<input type="text" name="kadi" style="width:250px; height:35px; margin-right:135px;  float:right; background-color:#FFF; color:#000; ">
-<font style="font-size:25px; margin-top:10px; margin-left:20px; float:left; color:#FFF;">Şifre</font>
-<input type="password" name="sifre" style="width:250px; height:35px; margin-right:135px;  float:right; background-color:#FFF; color:#000;">
-
-<input type="button" name="girisyap" value="Giriş" style="margin-top:10px; font-size:25px; float:left; margin-left:20px; width:75px; height:50px; background-color:#3C0;">
-<img src="i783wQYjrKQ.png" class="close" style="margin-top:13px;left:96%;position:fixed;">
-</div>
-</div>
 <body>
 <div class="sablon">
 	<div class="logo"><img src="../image/logo.jpg" 
@@ -55,8 +42,68 @@ $(document).ready(function(){
         <font style="float:left; font-size:20px; font-family:XBAND Rough;margin-left:220px;color:#FFF;">"Rakibin Burada Seni Bekliyor"</font>
     </div>
     <div class="kullanıcı">
-    	 	<button class="call_modal">Giriş Yap</button>
-            <button class="call_modal">Kayıt Bul</button>
+    	 	<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-large">Giriş</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:400px;">
+
+      <div class="w3-center	"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        <img src="../image/girisavatar.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
+
+      <form class="w3-container" action="/action_page.php">
+        <div class="w3-section">
+          <label><b>Kullanıcı Adı</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Kullanıcı Adınızı Giriniz" name="usrname" required>
+          <label><b>Şifre</b></label>
+          <input class="w3-input w3-border" type="password" placeholder="Şifrenizi Giriniz" name="psw" required>
+          <button class="w3-button w3-block w3-light-green w3-section w3-padding" type="submit">Giriş Yap</button>
+          <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Beni Hatırla
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Kapat</button>
+        <span class="w3-right w3-padding w3-hide-small">Şifremi <a href="#">unuttum.</a></span>
+      </div>
+
+    </div>
+  </div>
+  
+  <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-green w3-large">Kayıt Ol</button>
+
+  <div id="id02" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:400px">
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        <img src="../image/girisavatar.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
+<?php
+echo '
+      <form class="w3-container" action="index.php">
+        <div class="w3-section">
+          <label><b>Kullanıcı adı*</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Kullanıcı Adı" name="usrname" required>
+          <label><b>Şifre*</b></label>
+          <input class="w3-input w3-border" type="text" placeholder="Şifre" name="psw" required>
+          <label style="margin-top:15px;"><b>Ad Soyad*</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Ad Soyad" name="usrname" required>
+          <label><b>E-Posta*</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text"  placeholder="E-posta" name="usrname" required>
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Kayıt Ol</button>
+        </div>
+      </form>
+	  '
+?>
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id02').style.display='none'" type="button" class="w3-button w3-red">Kapat</button>
+        <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+      </div>
+
+    </div>
+  </div>
     </div>
     
     <div class="bar">
