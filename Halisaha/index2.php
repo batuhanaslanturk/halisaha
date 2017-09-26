@@ -12,7 +12,7 @@
 
 <body>
 <div class="sablon">
-	<div class="logo"><img src="	image/logo.jpg" 
+	<div class="logo"><img src="image/logo.jpg" 
     style="-webkit-border-radius: 20px 20px 20px 20px;
 			-moz-border-radius: 20px 20px 20px 20px;
 			border-radius: 20px 20px 20px 20px; -webkit-box-shadow: #B3B3B3 10px 10px 10px;
@@ -87,6 +87,78 @@
                     </a>
 		   
     </div>
+    <div class="filtreleme">
+     <font style="float:left; font-size:35px; margin-left:30px; margin-top:20px; color:#FFF; margin-right:20px;">Saha Ara</font>
+     <font style="float:left; font-size:25px; margin-left:10px; margin-top:20px; color:#FFF;">İl</font>
+     <div class="acilir_menu">
+		<select>
+        <option>İl Seçiniz</option>
+		<option value="Ankara">Ankara</option>
+		<option value="İstanbul">İstanbul</option>
+        <option value="Bursa">Bursa</option>
+		<option value="İzmir">İzmir</option>
+        <option value="Kocaeli">Kocaeli</option>
+		<option value="Trabzon">Trabzon</option>
+        <option value="Samsun">Samsun</option>
+		<option value="Sivas">Sivas</option>
+		</select>
+	 </div>
+      <font style="float:left; font-size:25px; margin-left:10px; margin-top:20px; color:#FFF;">İlçe</font>
+     <div class="acilir_menu">
+		<select>
+        <option>İlçe Seçiniz</option>
+		<option value="Osmangazi">Osmangazi</option>
+		<option value="Yıldırım">Yıldırım</option>
+        <option value="Kestel">Kestel</option>
+		<option value="Karacabey">Karacabey</option>
+        <option value="Orhaneli">Orhaneli</option>
+		<option value="İnegöl">İnegöl</option>
+        <option value="İznik">İznik</option>
+		<option value="Nilüfer">Nilüfer</option>
+		</select>
+	 </div>
+      <font style="float:left; font-size:25px; margin-left:10px; margin-top:20px; color:#FFF;">HalıSaha Tipi</font>
+     <div class="acilir_menu">
+		<select>
+        <option>Halısaha Tipi Seçiniz</option>
+		<option value="Açık">Açık</option>
+		<option value="Kapalı">Kapalı</option>
+		</select>
+	 </div>
+      <font style="float:left; font-size:15px; margin-left:20px; margin-top:20px; color:#FFF;">Min Fiyat</font>
+      <font style="float:left; font-size:15px; margin-left:30px; margin-top:20px; color:#FFF;">Max Fiyat</font>
+     <div class="acilir_menus">
+		<select>
+        <option>Min Fiyatı Seçiniz</option>
+		<option value="80">80</option>
+		<option value="85">85</option>
+        <option value="90">90</option>
+		<option value="95">95</option>
+        <option value="100">100</option>
+		<option value="105">105</option>
+		</select>
+	 </div>
+     <div class="acilir_menus">
+		<select>
+        <option>Max Fiyatı Seçiniz</option>
+		<option value="85">85</option>
+        <option value="90">90</option>
+		<option value="95">95</option>
+        <option value="100">100</option>
+		<option value="105">105</option>
+		</select>
+	 </div>
+      <font style="float:left; font-size:23px; margin-left:10px; margin-top:20px; color:#FFF;">Kiralık Ayakkabı</font>
+     <div class="acilir_menu">
+		<select>
+        <option>Kiralık Ayakkabı</option>
+		<option value="Var">Var</option>
+		<option value="Yok">Yok</option>
+		</select>
+	 </div>
+     <div style="float:left;"><input type="submit" value="ARA"></div>
+     </div>
+     <div class="bilgikutu"></div>
     
 </div>
 </body>
